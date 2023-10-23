@@ -17,3 +17,33 @@
 .linksPanel1, .linksPanel2{
 
 }
+
+.mainPanel {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 4fr 1fr;
+    background-color: #cfcfcf;
+}
+
+.projectsContainer {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template: 50px repeat(3, 1fr) / repeat(2, 1fr);
+    justify-content: space-evenly;
+}
+
+.projectsContainer > h3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding-left: 16px;
+}
+
+.projectPanel {
+    background-color: white;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    min-width: 200px;
+    max-width: 500px;
+    height: auto;
+}
